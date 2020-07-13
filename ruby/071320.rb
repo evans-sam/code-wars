@@ -66,5 +66,4 @@ def tribonacci(signature, n)
     i += 1
   end
   signature[0..n]
-
 end
