@@ -84,3 +84,10 @@ def decodeMorse(morseCode)
     end.join
   end.join(' ')
 end
+
+def generateHashtag(str)
+  str = str.strip.split(' ').map(&:capitalize).join
+  return false if str.length >= 140 || str.length == 0
+  '#' + str
+end
+
