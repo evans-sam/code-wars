@@ -91,3 +91,6 @@ def generateHashtag(str)
   '#' + str
 end
 
+def DNA_strand(dna)
+  dna.tr('ACTG', 'TGAC')
+end
