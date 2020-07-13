@@ -1,45 +1,5 @@
 require 'pry'
 
-MORSE_CODE = {
-  '.-' => 'a',
-  '-..' => 'b',
-  '-.-.' => 'c',
-  '-..' => 'd',
-  '.' => 'e',
-  '..-.' => 'f',
-  '--.' => 'g',
-  '....' => 'h',
-  '..' => 'i',
-  '.---' => 'j',
-  '-.-' => 'k',
-  '.-..' => 'l',
-  '--' => 'm',
-  '-.' => 'n',
-  '---' => 'o',
-  '.--.' => 'p',
-  '--.-' => 'q',
-  '.-.' => 'r',
-  '...' => 's',
-  '-' => 't',
-  '..-' => 'u',
-  '...-' => 'v',
-  '.--' => 'w',
-  '-..-' => 'x',
-  '-.--' => 'y',
-  '--..' => 'z',
-  '.----' => '1',
-  '..---' => '2',
-  '...--' => '3',
-  '....-' => '4',
-  '.....' => '5',
-  '-....' => '6',
-  '--...' => '7',
-  '---..' => '8',
-  '----.' => '8',
-  '-----' => '0',
-  '/' => ' ' # Mapping foward bar to be a space
-}
-
 def disemvowel str
   str.delete('aeiouAEIOU')
 end
@@ -93,4 +53,18 @@ end
 
 def DNA_strand(dna)
   dna.tr('ACTG', 'TGAC')
+end
+
+def song_decoder(song)
+  result = song.gsub('WUB', ' ').split(' ').join(' ')
+end
+
+def tribonacci(signature, n)
+  i = 3
+  (n - 3).times do
+    signature << (signature[i - 1] + signature[i - 2] + signature[i - 3])
+    i += 1
+  end
+  signature[0..n]
+
 end
