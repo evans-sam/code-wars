@@ -26,3 +26,9 @@ def isTriangle(a,b,c)
   a, b, c = [a, b, c].sort
   a + b > c
 end
+
+def to_camel_case(str)
+  first_word, *rest = str.split(/_|-/)
+  first_word.to_s + rest.map(&:capitalize).join
+end
+
