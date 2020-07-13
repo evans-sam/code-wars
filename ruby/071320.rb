@@ -16,10 +16,13 @@ end
 
 def dig_pow(n, p)
   n_array = n.to_s.chars.map(&:to_i)
-  result = n_array.map do |n_index|
-    n_index**p
-    p += 1
-  end
-  result = result.reduce(0) { |sum, i| sum + i }
+  result = n_array.map.with_index do |digit, index|
+    digit**(p + index)
+  end.reduce(:+)
   (result % n).zero? ? result / n : -1
+end
+
+def isTriangle(a,b,c)
+  a, b, c = [a, b, c].sort
+  a + b > c
 end
