@@ -32,3 +32,7 @@ def to_camel_case(str)
   first_word.to_s + rest.map(&:capitalize).join
 end
 
+def iq_test(numbers)
+  numbers = numbers.split(' ').map(&:to_i)
+  numbers.count(&:even?) > numbers.count(&:odd?) ? numbers.find_index(&:odd?) + 1 : numbers.find_index(&:even?) + 1
+end
