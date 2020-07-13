@@ -8,3 +8,7 @@ def openOrSenior(data)
     age > 54 && handicap > 7 ? 'Senior' : 'Open'
   end
 end
+
+def find_outlier(integers)
+  integers.count(&:even?) > 1 ? integers.find(&:odd?) : integers.find(&:even?)
+end
