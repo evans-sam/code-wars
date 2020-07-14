@@ -6,3 +6,7 @@ function maskify(cc) {
   }
   return cc.join("")
 }
+
+function digital_root(n) {
+
+}
