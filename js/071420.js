@@ -8,10 +8,10 @@ function maskify(cc) {
 }
 
 function digital_root(n) {
-  var n_array = n.toString().split('').map(el=>parseInt(el));
-  while (n_array.length > 1) {
-    n = n_array.reduce((a, b) => a + b, 0);
-    var n_array = n.toString().split('').map(el=>parseInt(el));
+  if (n < 10) {
+    return n;
   }
-  return n;
+  var n_array = n.toString().split('').map(el=>parseInt(el));
+  n = n_array.reduce((a, b) => a + b, 0);
+  return digital_root(n);
 }
