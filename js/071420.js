@@ -15,3 +15,8 @@ function digital_root(n) {
   n = n_array.reduce((a, b) => a + b, 0);
   return digital_root(n);
 }
+
+function descendingOrder(n) {
+  var n_array = n.toString().split('');
+  return parseInt(n_array.sort().reverse().join(""));
+}
