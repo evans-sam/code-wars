@@ -56,7 +56,7 @@ def DNA_strand(dna)
 end
 
 def song_decoder(song)
-  result = song.gsub('WUB', ' ').split(' ').join(' ')
+  song.gsub('WUB', ' ').split(' ').join(' ')
 end
 
 def tribonacci(signature, n)
@@ -67,3 +67,4 @@ def tribonacci(signature, n)
   end
   signature[0..n]
 end
+
