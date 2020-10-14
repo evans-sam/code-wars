@@ -26,3 +26,44 @@ const layout = {
   "0": ["8", "0"],
 }
 
+const validSolution = board => {
+  const solution = '123456789'
+
+  const attempts = [...rows(board), ...columns(board), ...squares(board)]
+
+  for(const attempt of attempts)
+    if(attempt !== solution) return false
+
+  return true
+}
+
+
+const rows = board => {
+  return board.map(row => [...row].sort().join(''))
+}
+
+const columns = board => {
+  return board.map((_row, index) => {
+    return board.map(row => {
+      return row[index]
+    }).sort().join('')
+  })
+}
+
+const squares = board => {
+  let squares = []
+
+  for(let i = 0; i < 7; i += 3) {
+    for(let j = 0; j < 7; j += 3) {
+      const squareString = [
+        board[i][j], board[i][j+1], board[i][j+2],
+        board[i+1][j], board[i+1][j+1], board[i+1][j+2],
+        board[i+2][j], board[i+2][j+1], board[i+2][j+2],
+      ].sort().join('')
+
+      squares.push(squareString)
+    }
+  }
+
+  return squares
+}
