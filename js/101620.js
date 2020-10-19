@@ -15,12 +15,11 @@ function hamming(n) {
 }
 
 const factorial = n => {
-  if(n < 0) return null
+  if(n <= 1) return '1'
 
   return [...Array(n).keys()]
     .map(x => x.toString())
     .slice(1)
-    .reverse()
     .reduce((product, value) => multiply(product)(value), n.toString())
 }
 
@@ -30,11 +29,11 @@ const factorial = (n) =>{
     : '1'
 } 
 
-const multiply = stringA => {
+const multiply = a => {
   return b => {
     let carry = 0
 
-    const result = stringA
+    const result = a
       .split('')
       .reduceRight((product, a) => {
         const p = +a * b + carry
@@ -47,21 +46,3 @@ const multiply = stringA => {
       .join('')
   }
 }
-
-
-
-
-console.log('****** ', factorial(0), 'null', '0!');
-console.log('****** ', factorial(1), '1', '1!');
-console.log('****** ', factorial(5), '120', '5!');
-console.log('****** ', factorial(9), '362880', '9!');
-console.log('****** ', factorial(15), '1307674368000', '15!');
-
-
-// console.log(multiply('25')('625'))
-// console.log(add('25','625'))
-// console.log(multiply('625')('625'))
-
-
-
-
