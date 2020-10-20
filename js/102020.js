@@ -84,9 +84,9 @@ const solution = list => {
       : range.slice(0,1) + '-' + range.slice(-1)
   )
 
-  const result = list.reduce(split, [])
 
-  return result
+
+  return list
     .reduce(split, [])
     .map(rangeToString)
     .join(',')
