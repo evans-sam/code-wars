@@ -84,12 +84,33 @@ const solution = list => {
       : range.slice(0,1) + '-' + range.slice(-1)
   )
 
-
-
   return list
     .reduce(split, [])
     .map(rangeToString)
     .join(',')
 }
 
-export { mixedFraction, phone, solution }
+const pigIt = string => {
+  return string
+    .split(' ')
+    .map(word => !word.match(/[!?]/) ? word.substring(1) + word.charAt(0) + 'ay' : word)
+    .join(' ')
+}
+
+const lastDigit = (list) => {
+  return list.reverse().slice(1).reduce((acc, n) => {
+    return last(acc, )
+  }, list.slice(0,1))
+}
+
+const last = (x, y) => {  
+  const lastA = x.toString().slice(-1)
+  const mod4 = y.toString().slice(-2) % 4
+  const exp = mod4 === 0 ? 4 : mod4
+
+  return (lastA ** exp)
+}
+
+
+
+export { mixedFraction, phone, solution, pigIt, lastDigit }

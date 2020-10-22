@@ -1,16 +1,12 @@
-function josephusSurvivor(n,k) {
-  const arr = [...Array(n).keys()].map(i => i+ 1);
-  return reduceArr(arr, k);
-}
+function josephusSurvivor(n, k) {
+  const array = [...Array(n).keys()].map(i => i + 1);
+  let e = 0
 
-function reduceArr(arr, k) {
-  arr.splice(k-1, 1);
-  console.log(arr)
-  k = k + k;
-  k > arr.length 
-    ? k = k % arr.length
-    : k;
-  console.log(k);
-}
+  while(array.length > 1) {
+    e += k - 1
+    e %= array.length
+    array.splice(e, 1)
+  }
 
-josephusSurvivor(7,3);
+  return array[0]
+}
