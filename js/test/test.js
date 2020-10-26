@@ -1,20 +1,21 @@
-import chai from 'chai'
-import { properFractions } from '../101920.js'
-import {
-  mixedFraction,
-  phone,
-  solution,
-  pigIt,
-  lastDigit
-} from '../102020.js'
-import {
-  proporFractionsTests,
-  mixedFractionsTests,
-  phoneTests,
+/* eslint-disable max-len */
+import chai from 'chai';
+// import {properFractions} from '../101920.js';
+// import {
+//   mixedFraction,
+//   phone,
+//   solution,
+//   pigIt,
+//   lastDigit,
+// } from '../102020.js';
+// import {
+//   proporFractionsTests,
+//   mixedFractionsTests,
+//   phoneTests,
+// } from './test_data.js';
+// import pathFinder from '../102620.js';
 
-} from './test_data.js'
-
-var expect = chai.expect
+const expect = chai.expect;
 
 // describe('proporFractions()', function() {
 //   this.timeout(0)
@@ -58,33 +59,33 @@ var expect = chai.expect
 //   })
 // })
 
-describe("lastDigit", function(){
-  it("should work for some examples", function(){
-    expect(lastDigit("4", "1")).to.equal(4);
-  });
-  it("should work for some examples", function(){
-    expect(lastDigit("4", "2")).to.equal(6);
-  });
-  it("should work for some examples", function(){
-    expect(lastDigit("9", "7")).to.equal(9);
-  });
-  it("should work for some examples", function(){
-    expect(lastDigit("10","10000000000")).to.equal(0);
-  });
-  it("should work for some examples", function(){
-    expect(lastDigit("1606938044258990275541962092341162602522202993782792835301376","2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376")).to.equal(6);
-  });
-  it("should work for some examples", function(){
-    expect(lastDigit("3715290469715693021198967285016729344580685479654510946723", "68819615221552997273737174557165657483427362207517952651")).to.equal(7);
-  });
-  it("should work for x ^ 0", function(){
-    var randomString = function(){
-      var i = Math.floor(Math.random() * 100) + 1, str="";
-      while(i --> 0){
-        str = str + "01234567890".charAt(Math.floor(Math.random()*10));
-      }
-      return str;
-    };
-    var i, r;
-  });
-});
+// describe('lastDigit', function() {
+//   it('should work for some examples', function() {
+//     expect(lastDigit('4', '1')).to.equal(4);
+//   });
+//   it('should work for some examples', function() {
+//     expect(lastDigit('4', '2')).to.equal(6);
+//   });
+//   it('should work for some examples', function() {
+//     expect(lastDigit('9', '7')).to.equal(9);
+//   });
+//   it('should work for some examples', function() {
+//     expect(lastDigit('10', '10000000000')).to.equal(0);
+//   });
+//   it('should work for some examples', function() {
+//     expect(lastDigit('1606938044258990275541962092341162602522202993782792835301376', '2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376')).to.equal(6);
+//   });
+//   it('should work for some examples', function() {
+//     expect(lastDigit('3715290469715693021198967285016729344580685479654510946723', '68819615221552997273737174557165657483427362207517952651')).to.equal(7);
+//   });
+//   it('should work for x ^ 0', function() {
+//     const randomString = function() {
+//       let i = Math.floor(Math.random() * 100) + 1; let str='';
+//       while (i --> 0) {
+//         str = str + '01234567890'.charAt(Math.floor(Math.random()*10));
+//       }
+//       return str;
+//     };
+//     let i; let r;
+//   });
+// });
