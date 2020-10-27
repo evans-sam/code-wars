@@ -26,4 +26,6 @@ function pathFinder(mazeString) {
   return pathFind(0)(0);
 }
 
+
+
 export default pathFinder;

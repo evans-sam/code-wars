@@ -15,7 +15,7 @@ import chai from 'chai';
 // } from './test_data.js';
 // import pathFinder from '../102620.js';
 
-const expect = chai.expect;
+const { expect } = chai;
 
 // describe('proporFractions()', function() {
 //   this.timeout(0)
