@@ -2,8 +2,7 @@ function disariumNumber(number) {
   const disarium = number
     .toString()
     .split('')
-    .map(Number)
-    .reduce((sum, n, i) => sum + n ** (i + 1), 0);
+    .reduce((sum, n, i) => sum + (+n) ** (i + 1), 0);
 
   return disarium === number ? 'Disarium !!' : 'Not !!';
 }
