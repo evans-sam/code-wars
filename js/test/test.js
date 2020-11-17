@@ -14,6 +14,7 @@ import chai from 'chai';
 //   phoneTests,
 // } from './test_data.js';
 // import pathFinder from '../102620.js';
+import dblLinear from '../dbLinear.js';
 
 const { expect } = chai;
 
@@ -89,3 +90,38 @@ const { expect } = chai;
 //     let i; let r;
 //   });
 // });
+
+function testing(actual, expected) {
+  expect(actual).to.equal(expected);
+}
+
+describe('dblLinear', function() {
+  this.timeout(0)
+  it('should pass', () => {
+    testing(dblLinear(10), 22);
+  });
+  it('should pass', () => {
+    testing(dblLinear(20), 57);
+  });
+  it('should pass', () => {
+    testing(dblLinear(30), 91);
+  });
+  it('should pass', () => {
+    testing(dblLinear(50), 175);
+  });
+  it('should pass', () => {
+    testing(dblLinear(100), 447);
+  });
+  it('should pass', () => {
+    testing(dblLinear(500), 3355);
+  });
+  it('should pass', () => {
+    testing(dblLinear(1000), 8488);
+  });
+  it('should pass', () => {
+    testing(dblLinear(2000), 19773);
+  });
+  it('should pass', () => {
+    testing(dblLinear(6000), 80914);
+  });
+});
