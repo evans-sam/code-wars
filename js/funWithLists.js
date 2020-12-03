@@ -12,3 +12,10 @@ const indexOf = (head, value, index = 0) => {
 const lastIndexOf = (head, value) => listToArray(head).lastIndexOf(value);
 
 const listToArray = (head) => (head ? [head.data, ...listToArray(head.next)] : []);
+
+const anyMatch = (head, callback) => (head
+  ? callback(head.data) || anyMatch(head.next, callback)
+  : false);
+const allMatch = (head, callback) => (head
+  ? callback(head.data) && allMatch(head.next, callback)
+  : true);
