@@ -1,4 +1,4 @@
-public class Kata
+public partial class Kata
 {
   public static int? FoldTo(double distance)
   {

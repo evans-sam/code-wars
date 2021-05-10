@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class Kata
+public partial class Kata
 {
   public static string GetDrinkByProfession(string profession)
   {

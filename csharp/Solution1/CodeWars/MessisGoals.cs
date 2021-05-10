@@ -1,6 +1,6 @@
 using System;
 
-public static class Kata 
+public static partial class Kata 
 {
     public static int la_liga_goals = 43;
     public static int champions_league_goals = 10;

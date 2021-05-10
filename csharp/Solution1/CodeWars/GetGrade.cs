@@ -1,6 +1,6 @@
 using System;
 
-public class Kata
+public partial class Kata
 {
   public static char GetGrade(int s1, int s2, int s3)
   {

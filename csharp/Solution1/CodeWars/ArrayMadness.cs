@@ -1,5 +1,5 @@
 using System.Linq;
-public class Kata
+public partial class Kata
 {
   public static bool ArrayMadness(int[] a, int[] b)
   {

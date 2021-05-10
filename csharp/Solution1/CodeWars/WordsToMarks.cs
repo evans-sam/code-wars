@@ -1,6 +1,6 @@
 using System.Linq;
 
-public static class Kata
+public static partial class Kata
 {
   public static int WordsToMarks(string word)
   {

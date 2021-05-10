@@ -1,6 +1,6 @@
 using System;
 
-public static class Kata 
+public static partial class Kata 
 {
   public static int GetRealFloor(int n) 
   {
