@@ -95,8 +95,8 @@ function testing(actual, expected) {
   expect(actual).to.equal(expected);
 }
 
-describe('dblLinear', function() {
-  this.timeout(0)
+describe('dblLinear', function () {
+  this.timeout(0);
   it('should pass', () => {
     testing(dblLinear(10), 22);
   });
