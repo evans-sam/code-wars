@@ -1,0 +1,12 @@
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\bin\Debug\net5.0\CodeWars.deps.json
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\bin\Debug\net5.0\CodeWars.dll
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\bin\Debug\net5.0\ref\CodeWars.dll
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\bin\Debug\net5.0\CodeWars.pdb
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.csprojAssemblyReference.cache
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.AssemblyInfoInputs.cache
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.AssemblyInfo.cs
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.csproj.CoreCompileInputs.cache
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.dll
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\ref\CodeWars.dll
+C:\Users\samuel.evans\WebstormProjects\code-wars\csharp\Solution1\CodeWars\obj\Debug\net5.0\CodeWars.pdb
