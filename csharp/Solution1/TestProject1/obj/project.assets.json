@@ -1225,6 +1225,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "CodeWars/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CodeWars.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodeWars.dll": {}
+        }
       }
     }
   },
@@ -4586,10 +4596,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "CodeWars/1.0.0": {
+      "type": "project",
+      "path": "../CodeWars/CodeWars.csproj",
+      "msbuildProject": "../CodeWars/CodeWars.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CodeWars >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1"
@@ -4621,7 +4637,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\samuel.evans\\WebstormProjects\\code-wars\\csharp\\Solution1\\CodeWars\\CodeWars.csproj": {
+              "projectPath": "C:\\Users\\samuel.evans\\WebstormProjects\\code-wars\\csharp\\Solution1\\CodeWars\\CodeWars.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
